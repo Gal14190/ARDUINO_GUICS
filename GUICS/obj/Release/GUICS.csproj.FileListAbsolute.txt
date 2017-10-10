@@ -1,0 +1,8 @@
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Release\GUICS.exe.config
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Release\GUICS.exe
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Release\GUICS.pdb
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Release\GUICS.Communication.resources
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Release\GUICS.Properties.Resources.resources
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Release\GUICS.csproj.GenerateResource.Cache
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Release\GUICS.exe
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Release\GUICS.pdb
