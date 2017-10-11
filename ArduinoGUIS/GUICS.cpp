@@ -1,3 +1,11 @@
+/**
+ * --------------------------------------------------------------------------
+ * ArduinoGUICS[C#]: GUICS.cpp
+ * author: Gal Ashkenazi
+ * (https://github.com/Gal14190/ARDUINO_GUICS)
+ * --------------------------------------------------------------------------
+ */
+
 #include "GUICS.h"
 
 void GUIloop()
