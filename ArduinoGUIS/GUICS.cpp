@@ -10,49 +10,48 @@ void GUIloop()
   bool BOOL_DATA;
   int INT_DATA;
   
-  if(GUI.available() > 0){
+  if(GUI.Available() > 0){
     delay(30);
-    switch(GUI.read()){
+    switch(GUI.Read()){
       case TOKEN::DIGITAL_SET:
-        DATA = GUI.read();
+        DATA = GUI.Read();
         
         if(DATA == TOKEN::SET_INPUT){
-          SetP_IN((int)GUI.read());
+          SetP_IN((int)GUI.Read());
         }
         else if(DATA == TOKEN::SET_OUTPUT){
-          SetP_OUT((int)GUI.read());
+          SetP_OUT((int)GUI.Read());
         }
       break;
       
       case TOKEN::DIGITAL_INPUT:
-        BOOL_DATA = PIN((int)GUI.read());
+        BOOL_DATA = PIN((int)GUI.Read());
         if(BOOL_DATA){
           DATA = '1';
         }
         else if(!BOOL_DATA){
           DATA = '0';
         }
-        GUI.write(DATA);
+        GUI.Write(DATA);
       break;
       
       case TOKEN::DIGITAL_OUTPUT:
-        DATA = GUI.read();
+        DATA = GUI.Read();
         
         if(DATA == TOKEN::SET_HIGH){
-          POUT_H((int)GUI.read());
+          POUT_H((int)GUI.Read());
         }
         else if(DATA == TOKEN::SET_LOW){
-          POUT_L((int)GUI.read());
+          POUT_L((int)GUI.Read());
         }
       break;
       
       case TOKEN::ANALOG_INPUT:
         delay(100);
-        INT_DATA = analogRead((int)GUI.read());
+        INT_DATA = AnalogInput((int)GUI.Read());
         GUI.print(INT_DATA, DEC);
-        GUI.write(TOKEN::END_CHAR);
+        GUI.Write(TOKEN::END_CHAR);
       break;
     }
   }
 }
-
