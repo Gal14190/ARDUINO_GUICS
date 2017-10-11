@@ -137,31 +137,25 @@ GUI.delay(1000); //stop the program to 1 second
 `text`: change inner text for label.<br>
 Getting label part and content.<br>
 ```
-GUI.text(label1, "HELLOW WORLD");
+GUI.Text(label1, "HELLOW WORLD");
 ```
 
 <br><br>
 `color`: change background color for part.<br>
 Getting part name and `Color`.<br>
 ```
-GUI.text(button1, Color.Red);
+GUI.Color(button1, Color.Red);
 ```
 
 <br><br>
 
 class `MultiTask`: create new object to multi task (run in the background).<br>
-Getting two functions, 1)setting up GPIO mode (`DIGITAL_MODE`) 2)run in the background (infinity).<br>
+Getting one functions, run in the background (infinity).<br>
 NOTE: find `//init mutiTask` in the main program.<br>
 ```
 //init mutiTask
-multiTask task = new multiTask(() => ARDUINOsetup(), () => ARDUINOloop());
+multiTask task = new multiTask(() => ARDUINOsetup());
 ...
-
-void ARDUINOsetup()
-{
-  ARDUINO.DIGITAL_MODE...
-  //some code...
-}
 
 void ARDUINOloop()
 {
@@ -171,4 +165,4 @@ void ARDUINOloop()
 ```
 
 ## Developer
-@Gal Ashkenazi
+@Gal Ashkenazi(Gal14190)
