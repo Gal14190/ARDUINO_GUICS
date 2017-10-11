@@ -1,3 +1,11 @@
+/**
+ * --------------------------------------------------------------------------
+ * ArduinoGUICS[C#]: GUICS.h
+ * author: Gal Ashkenazi
+ * (https://github.com/Gal14190/ARDUINO_GUICS)
+ * --------------------------------------------------------------------------
+ */
+ 
 #ifndef _GUICS_H
 #define _GUICS_H
 
@@ -7,6 +15,9 @@
 
 #define GUI Serial 
 #define GUIsetup() GUI.begin(BAUD)
+#define Available() available()
+#define Read() read()
+#define Write(X) write(X)
 
 #define SetP_IN(X) pinMode(X, INPUT_PULLUP)
 #define SetP_OUT(X) pinMode(X, OUTPUT)
