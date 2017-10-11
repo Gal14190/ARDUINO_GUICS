@@ -4,11 +4,13 @@
   <p align="center">
   -Add <b>U</b>ser <b>I</b>nterface to your Arduino projects
   <br>
+  -Run in realTime without images and uploads the code evrey time
+  <br>
+  -Multi Tasking
+  <br>
   -Development in a one platform
   <br>
   -Use one language code
-  <br>
-  -Run in realTime without images and uploads the code evrey time
   <br>
   -OPEN SOURCE
 </p>
