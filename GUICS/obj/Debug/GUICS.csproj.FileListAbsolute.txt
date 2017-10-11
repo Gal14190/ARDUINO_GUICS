@@ -1,0 +1,10 @@
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Debug\GUICS.exe.config
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Debug\GUICS.exe
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\bin\Debug\GUICS.pdb
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.csprojResolveAssemblyReference.cache
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.Communication.resources
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.Properties.Resources.resources
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.csproj.GenerateResource.Cache
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.exe
+c:\users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.pdb
+C:\Users\gal14_000\documents\visual studio 2015\Projects\GUICS\GUICS\obj\Debug\GUICS.main.resources
