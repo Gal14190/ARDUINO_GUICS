@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +35,11 @@ namespace GUICS
             public const char END_CHAR = '@';
         }
 
+        /// <summary>
+        /// Setup GPIO mode (Input / Output).
+        /// </summary>
+        /// <param name="DIGITAL_PIN">GPIO number</param>
+        /// <param name="_SET">SET.INPUT or SET.OUTPUT</param>
         public void DIGITAL_MODE(int DIGITAL_PIN, SET _SET)
         {
             char PIN = Convert.ToChar(DIGITAL_PIN);
@@ -61,6 +66,11 @@ namespace GUICS
             }
         }
 
+        /// <summary>
+        /// Return GPIO status (ex. switch or trigger) for GPIO mode [SET.INPUT].
+        /// </summary>
+        /// <param name="DIGITAL_PIN">GPIO number</param>
+        /// <returns>true for HIGH logic level OR false for LOW logic level</returns>
         public bool DIGITAL_GET(int DIGITAL_PIN)
         {
             char PIN = Convert.ToChar(DIGITAL_PIN);
@@ -83,6 +93,12 @@ namespace GUICS
             return false;
         }
 
+
+        /// <summary>
+        /// Set GPIO status for mode [SET.OUTPUT].
+        /// </summary>
+        /// <param name="DIGITAL_PIN">GPIO number</param>
+        /// <param name="_SET">SET.HIGH for high logic level OR SET.LOW for low logic level</param>
         public void DIGITAL_SET(int DIGITAL_PIN, SET _SET)
         {
             char PIN = Convert.ToChar(DIGITAL_PIN);
@@ -143,17 +159,33 @@ namespace GUICS
 
     class GUI
     {
+
+        /// <summary>
+        /// Sleep program for while
+        /// </summary>
+        /// <param name="ms">milli seconds</param>
         public static void delay(int ms)
         {
             System.Threading.Thread.Sleep(ms);
         }
 
-        public static void text(Control ctl, string content)
+
+        /// <summary>
+        /// Set the text associared with this control
+        /// </summary>
+        /// <param name="ctl">Control object</param>
+        /// <param name="content">Set text</param>
+        public static void Text(Control ctl, string content)
         {
             ctl.Invoke(new Action(() => ctl.Text = content));
         }
 
-        public static void color(Control ctl, System.Drawing.Color color)
+        /// <summary>
+        /// Set the background associared with this control
+        /// </summary>
+        /// <param name="ctl">Control object</param>
+        /// <param name="content">Set color [Color.(color name)]</param>
+        public static void Color(Control ctl, System.Drawing.Color color)
         {
             ctl.Invoke(new Action(() => ctl.BackColor = color));
         }
@@ -161,11 +193,14 @@ namespace GUICS
 
     class MultiTask 
     {
-        public MultiTask( Action setup, Action loop)
+        public bool Enable = true;
+        /// <summary>
+        /// Run task in background. Call it like new object.
+        /// </summary>
+        /// <param name="loop">Insert function structure:() => Func()</param>
+        public MultiTask(Action loop)
         {
-            setup();
-
-            Task.Run(() => { while(true) loop(); });
+            Task.Run(() => { while(Enable) loop(); });
         }
     }
 }
