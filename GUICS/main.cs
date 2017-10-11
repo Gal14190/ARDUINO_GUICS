@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +23,8 @@ namespace GUICS
 
         private void main_Load(object sender, EventArgs e)
         {
+            //setup GPIO mode
+
             //init mutiTask
         }
     }
