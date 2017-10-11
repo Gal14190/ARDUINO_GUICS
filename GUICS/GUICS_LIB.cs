@@ -1,3 +1,10 @@
+/**
+ * --------------------------------------------------------------------------
+ * GUICS[C#]: GUICS_LIB.cs
+ * author: Gal Ashkenazi
+ * (https://github.com/Gal14190/ARDUINO_GUICS)
+ * --------------------------------------------------------------------------
+ */
 using System;
 using System.Collections.Generic;
 using System.Linq;
